@@ -1,9 +1,13 @@
-const add = function() {
-	
+const add = function(a, b) {
+  const sum = a + b;
+  return sum;
 };
 
 const subtract = function() {
-	
+	const a = 0;
+  const b = 0;
+  const subtract = a - b;
+  return subtract;
 };
 
 const sum = function() {
