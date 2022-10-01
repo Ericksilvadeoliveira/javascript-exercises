@@ -15,13 +15,8 @@ const sum = function(a, b) {
 	return add;
 };
 
-const multiply = function(num1, num2) {
-  var multi = 0;
-  for(var i = 1; i <= num2; i++){
-    multi += num1;
-  }
-
-  return multi;
+const multiply = function(numbers) {
+  return numbers.reduce((a, b) => (a * b));
 };
 
 const power = function() {
