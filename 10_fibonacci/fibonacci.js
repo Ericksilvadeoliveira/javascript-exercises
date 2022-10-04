@@ -1,13 +1,18 @@
-const fibonacci = function() {
-    var sequence = [];
+const fibonacci = function(num) {
+    if (num < 0) return'OOPS';
+    if (num === 0) return 0;
 
-    sequence[0] = 0;
-    sequence[1] = 1;
-    
-    for (i = 2; i < 10; i++) {
-        sequence[i] = sequence[i - 2] + sequence[i - 1];
+    let a = 0;
+    let b = 1;
+
+    for (let i = 1; i < num; i++) {
+        let temp = b;
+
+        b = a + b;
+        a = temp;
     }
-    return sequence[6];
+
+    return b;
 };
 
 // Do not edit below this line
